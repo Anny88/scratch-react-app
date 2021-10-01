@@ -11,7 +11,7 @@ const ButtonWrapper = styled.button`
   font-size: 16px;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: all 220ms ease-out;
+  transition: all 220ms ease-in-out;
   
   &:hover {
     background-color: transparent;

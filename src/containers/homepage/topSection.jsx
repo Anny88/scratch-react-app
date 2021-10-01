@@ -4,12 +4,14 @@ import Background from "../../assets/pictures/team-bg.png";
 import {Logo} from "../../components/logo";
 import {Marginer} from "../../components/marginer";
 import {Button} from "../../components/button";
+import {DownArrow} from "../../components/downArrow";
 
 const TopContainer = styled.div`
   width: 100%;
   height: 100vh;
   padding: 0;
   background: url(${Background});
+  position: relative;
 `;
 
 const BackgroundFilter = styled.div`
@@ -26,6 +28,14 @@ const MotivationalText = styled.h1`
   margin: 0;
 `
 
+const DownArrowContainer = styled.div`
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
+
 export function TopSection() {
     return (
         <TopContainer>
@@ -37,6 +47,9 @@ export function TopSection() {
                 <MotivationalText>From the Best in the World</MotivationalText>
                 <Marginer direction="vertical" margin="4em" />
                 <Button>Get in contact</Button>
+                <DownArrowContainer>
+                    <DownArrow />
+                </DownArrowContainer>
             </BackgroundFilter>
         </TopContainer>)
 }
