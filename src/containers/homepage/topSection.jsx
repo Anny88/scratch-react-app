@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Background from "../../assets/pictures/team-bg.png";
 import {Logo} from "../../components/logo";
+import {Marginer} from "../../components/marginer";
+import {Button} from "../../components/button";
 
 const TopContainer = styled.div`
   width: 100%;
@@ -16,11 +18,25 @@ const BackgroundFilter = styled.div`
   background-color: rgba(53, 53, 53, 0.8);
 `;
 
+const MotivationalText = styled.h1`
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+`
+
 export function TopSection() {
     return (
         <TopContainer>
             <BackgroundFilter>
+                <Marginer direction="vertical" margin="8em" />
                 <Logo />
+                <Marginer direction="vertical" margin="4em" />
+                <MotivationalText>Software development</MotivationalText>
+                <MotivationalText>From the Best in the World</MotivationalText>
+                <Marginer direction="vertical" margin="4em" />
+                <Button>Get in contact</Button>
             </BackgroundFilter>
         </TopContainer>)
 }
