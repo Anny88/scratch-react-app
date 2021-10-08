@@ -39,10 +39,10 @@ const DownArrowContainer = styled.div`
 
 
 export function TopSection() {
-
     const scrollToNextSection = () => {
         scroller.scrollTo("servicesSection", { smooth: true, duration: 1500 });
     }
+
     return (
         <Element name="topSection">
             <TopContainer>
