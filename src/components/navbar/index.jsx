@@ -36,7 +36,7 @@ export function NavBar() {
         </BrandContainer>
         <AccessibilityContainer>
             <Button small>Get started</Button>
-            <Marginer direction="horozontal" margin="8px" />
+            <Marginer direction="horizontal" margin="8px" />
             <LoginButton small>Log in</LoginButton>
         </AccessibilityContainer>
     </NavBarContainer>);
