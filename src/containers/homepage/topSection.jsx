@@ -5,6 +5,7 @@ import {Logo} from "../../components/logo";
 import {Marginer} from "../../components/marginer";
 import {Button} from "../../components/button";
 import {DownArrow} from "../../components/downArrow";
+import {NavBar} from "../../components/navbar";
 
 const TopContainer = styled.div`
   width: 100%;
@@ -40,6 +41,7 @@ export function TopSection() {
     return (
         <TopContainer>
             <BackgroundFilter>
+                <NavBar />
                 <Marginer direction="vertical" margin="8em" />
                 <Logo />
                 <Marginer direction="vertical" margin="4em" />
