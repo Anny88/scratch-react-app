@@ -6,7 +6,7 @@ const ServiceContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: ${({ isReversed }) => isReversed ? 'row-reverse' : 'row' };
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 `;
 
 const StyledImg = styled.img`
@@ -18,13 +18,14 @@ const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 60%;
+  max-width: 55%;
 `;
 
 const Title = styled.h2`
   color: ${theme.fontDefault};
   font-size: 28px;
   font-weight: 700;
+  margin-bottom: 6px;
 `;
 
 const Details = styled.p`

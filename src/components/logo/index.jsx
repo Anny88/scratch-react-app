@@ -3,7 +3,6 @@ import styled, {css} from "styled-components";
 import {theme} from "../../theme";
 import LogoPic from '../../assets/logos/logo.png';
 
-
 const LogoContainer = styled.div`
   display: flex;
   flex-direction: ${({ inline }) => inline ? 'row' : 'column' };
