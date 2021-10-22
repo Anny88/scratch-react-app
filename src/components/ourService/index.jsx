@@ -18,7 +18,7 @@ const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 55%;
+  max-width: 65%;
 `;
 
 const Title = styled.h2`
@@ -32,7 +32,7 @@ const Details = styled.p`
   color: #7a7a7a;
   font-size: 18px;
   text-align: center;
-  max-width: 70%;
+  max-width: 65%;
 `;
 
 export function OurService({ title, description, imgUrl, isReversed }) {
